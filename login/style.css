@@ -1,0 +1,120 @@
+Body{
+    margin: 0px;
+    padding: 0px;
+   background-size: 100% 1000px;
+ background-image: url(./universe-8766586_1280.jpg);
+ background-repeat:no-repeat;
+ 
+}
+
+#heading{
+    margin: 0px;
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: 50px;
+    color: rgb(251, 5, 5);
+    font-size: 130px;
+    text-shadow: 0px 0px 5px;
+}
+#heading2{
+    margin: -12px;
+padding-left: 500px;
+letter-spacing: 7px;
+    word-spacing: 28px;
+    color: whitesmoke;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px;
+}
+marquee{
+    margin-top: -30px;
+}
+#inner{
+
+    margin-top:-250px;
+    margin-left:220px;
+    padding: 0px;
+}
+#inner1{
+
+   
+    margin-left: 900px;
+    margin-top:-210px;
+    padding: 0px;
+}
+#ram{
+    margin-top: 6px;
+    width: 100%;
+    height: 400px;
+
+}
+video{
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 526px;
+    height: 289px;
+    box-shadow: 5px 5px 5px rgb(77, 9, 203), -5px -5px 5px rgb(0, 175, 244);
+     border-radius: 10px;
+}
+#login{
+    margin-top: 100px;
+    margin-left: 370px;
+    background-color: black;
+    width: 526px;
+    height: 289px;
+    float: left;
+    box-shadow: 5px 5px 10px rgb(77, 9, 203), -5px -5px 10px rgb(0, 175, 244);
+     border-radius: 10px;
+     outline: none;
+
+}
+form{
+    margin-top: 10px;
+}
+input{
+  margin-left: 150px;
+    margin-top: 40px;
+    width: 200px;
+    border-radius: 5px;
+}
+#pgn{
+    margin-top: -220px;
+    margin-left: 1px;
+}
+#ou{
+    font-size: 15px;
+    background:transparent;
+    box-shadow: 2px 2px 5px rgb(77, 9, 203), -2px -2px 5px rgb(0, 175, 244);
+    color: white;
+    border: none;
+    outline: none;
+}
+.in{
+    font-size: 15px;
+    background:transparent;
+    box-shadow: 2px 2px 5px rgb(77, 9, 203), -2px -2px 5px rgb(0, 175, 244);
+    color: white;
+    border: none;
+    outline: none;
+}
+#Footer{
+    margin-top:45px;
+    float: left;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+.social{
+    
+    margin-top:10px;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+
+}
+p{
+    color: rgb(248, 239, 239);
+    text-size-adjust: 20px;
+    margin-top: -30px;
+    margin-left:1200px;
+}
