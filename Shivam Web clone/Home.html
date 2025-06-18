@@ -121,25 +121,32 @@
     
 
       <!-- bg5 section  -->
-       <div class="bg5">
-          <h1>Contact Us</h1>
-          <p>Get in touch for IT services and solutions in<br>Hyderabad.</p>
-          <div class="form">
-          <form action="">
-            <label>Your First Name</label>
-            <input type="text" class="in" id="Name" placeholder="Enter your first name">
 
-            <label>Your Email Address*</label>
-            <input type="email" class="in" id="email" placeholder="Enter your email address">
 
-            <label>Your Message*</label>
-            <textarea class="in" id="Message" placeholder="Type your message here"></textarea>
+<div class="bg5">
+  <h1>Contact Us</h1>
+  <p>Get in touch for IT services and solutions in<br>Hyderabad.</p>
+  <div class="form">
+    <form id="form">
+      <label>Your First Name</label>
+      <input type="text" class="in" id="sign-na" placeholder="Enter your first name">
+      <span id="name_error" class="error"></span>
 
-            <button id="btn">Submit Your Inquiry</button>
-          </form>
+      <label>Your Email Address*</label>
+      <input type="email" class="in" id="sign-em" placeholder="Enter your email address">
+      <span id="email_error" class="error"></span>
 
-          </div>
-       </div>
+      <label>Your Message*</label>
+      <textarea class="in" id="sign-ps" placeholder="Type your message here"></textarea>
+      <span id="pass_error" class="error"></span>
+
+      <button id="btn" type="submit">Submit Your Inquiry</button>
+    </form>
+  </div>
+</div>
+
+
+
 
 
         <!-- bg6 section  -->
@@ -162,8 +169,10 @@
               <h3>SUPPORT</h3>
               <label for="support-email">Enter your email address</label><br>
               <input type="email" id="support-email" placeholder="example@domain.com">
-              <button class="footer-btn">Submit your inquiry now</button>
+              <span id="footer_email_error" class="error"></span>
+              <button class="footer-btn" id="footer-btn">Submit your inquiry now</button>
             </div>
+
           
           </div>
         
@@ -180,5 +189,7 @@
 
 
   </div>
+
+  <script src="./Home.js"></script>
 </body>
 </html>
