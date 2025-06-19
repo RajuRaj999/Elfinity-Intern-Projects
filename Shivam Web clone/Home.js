@@ -50,5 +50,11 @@ footerBtn.addEventListener('click', (e) => {
   } else {
     footerError.innerHTML = "";
   }
+
+  if (footerEmail.value.match(email_check)) {
+  footerError.innerHTML = "";
+  footerEmail.value = ""; // clear input field
+}
+
 });
 
