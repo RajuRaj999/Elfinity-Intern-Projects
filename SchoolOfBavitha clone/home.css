@@ -10,18 +10,21 @@ body {
 .main {
     width: 100%;
     height: 100vh;
+    padding-top: 85px;
   background: linear-gradient(to right bottom , #0d1229, #15275f);
+ 
 }
 
 .sub {
   width: 100%;
   height: 70px;
   padding-top: 15px;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 
 .sub.scrolled {
@@ -105,15 +108,21 @@ nav {
   z-index: 1000;
 }
 
-.list ul li:hover ul.dropdown {
-  display: block;
+.dropdown-toggle i {
+  transition: transform 0.1s ease;
+}
+
+li.active .dropdown-toggle i {
+  transform: rotate(180deg);
 }
 
 .list ul li ul.dropdown li {
   padding: 8px 15px;
   color: #333;
 }
-
+.list ul li.active ul.dropdown {
+  display: block;
+}
 
 .list ul li ul.dropdown li a {
   color: #333;
@@ -158,9 +167,88 @@ svg{
     height: 16px;
 }
 
-/* h4{
-  
-} */
+/* Hide toggle on desktop */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+
+  .list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #15275f;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    z-index: 1001;
+  }
+
+  .list ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .list.open {
+    display: flex;
+  }
+
+  .list li a {
+    color: white;
+  }
+}
+
+
+/* nav bar finished */
+.bobble {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  position: absolute; 
+  top: 60%;          
+  left: 180px;
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+#b1{
+   top: 10%;          
+  left: 180px;
+  background-color: rgba(255, 255, 255, 0.005);
+}
+#b2{
+   top: 80%;          
+    left: 1250px;
+  background-color: rgba(255, 255, 255, 0.005);
+}
+
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .hero {
   text-align: center;
   padding: 80px 20px 60px;
@@ -174,7 +262,7 @@ svg{
   display: inline-block;
   font-size: 14px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .hero-heading {
@@ -494,19 +582,37 @@ svg{
   text-align: center;
   padding: 80px 20px;
 }
+.testimonial-section h6{
+  font-size: 15px;
+}
 .testimonial-section h2{
+  margin-top: 30px;
   font-size: 50px;
 }
+#man{
+  font-size: 20px;
+}
 .testimonial-section p{
-  margin-top: 20px;
-  padding-bottom: 30px;
+
+  line-height: 1.5;
 }
 
 .testimonial-carousel {
+  height: 300px;
   position: relative;
   max-width: 800px;
-  margin: auto;
+ margin-top: 50px;
+margin-left: 340px;
   overflow: hidden;
+  border-radius: 15px;
+  
+}
+.title{
+  color: black;
+}
+.course{
+  font-size: 15px;
+  color: rgb(207, 203, 203);
 }
 
 .testimonial {
@@ -519,6 +625,7 @@ svg{
 
 .testimonial.active {
   display: block;
+  
 }
 
 .stars {
