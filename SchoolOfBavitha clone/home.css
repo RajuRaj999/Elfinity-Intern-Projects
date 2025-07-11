@@ -166,8 +166,8 @@ svg{
     width: 16px;
     height: 16px;
 }
-
-/* Hide toggle on desktop */
+/* 
+Hide toggle on desktop */
 .nav-toggle {
   display: none;
   background: none;
@@ -601,8 +601,7 @@ svg{
   height: 300px;
   position: relative;
   max-width: 800px;
- margin-top: 50px;
-margin-left: 340px;
+   margin: 50px auto;
   overflow: hidden;
   border-radius: 15px;
   

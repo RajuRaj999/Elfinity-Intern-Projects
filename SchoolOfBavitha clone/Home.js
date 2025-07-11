@@ -28,7 +28,6 @@ toggleBtn.addEventListener('click', () => {
   icon.className = isOpen ? 'fa fa-times' : 'fa fa-bars';
 });
 
-
  let currentIndex = 0;
   const testimonials = document.querySelectorAll(".testimonial");
   const dots = document.querySelectorAll(".dot");
@@ -50,8 +49,8 @@ toggleBtn.addEventListener('click', () => {
 
   showTestimonial(currentIndex);
 
-
   setInterval(nextTestimonial, 3000);
+
 
 
 
