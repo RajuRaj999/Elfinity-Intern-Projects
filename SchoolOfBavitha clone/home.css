@@ -211,6 +211,9 @@ Hide toggle on desktop */
   .list li a {
     color: white;
   }
+  .list .btn{
+    color: black;
+  }
 }
 
 
